@@ -1,0 +1,120 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* MENU */
+
+ .menu{
+    a{
+        font-size: $letras !important;
+        font-weight: 600;
+        color:map-get($map: $colores, $key: colorTerciario );
+    }
+    button{
+        font-size: $letras !important;
+        font-weight: 600;
+    }
+ }
+/* carrusel */
+
+.carousel-inner {
+    max-height:39rem !important;
+}
+
+
+/* contacto */
+
+#bg-contactos{
+    position:relative;
+    top: -130px;
+} 
+
+ #seccion-contacto{
+    background-color: map-get($map: $colores, $key: colorPrincipal );
+    min-height:500px;
+    position:relative;
+}
+
+/* contenedor formulario */
+
+#contenedor-formulario{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: map-get($map: $colores, $key: colorSecundario );
+    border-radius:5px;
+    
+}
+
+#titulo-formulario {
+    color: map-get($map: $colores , $key: colorTerciario );
+}
+
+
+
+
+/* pie de pagina*/
+
+footer {
+    background: map-get($map: $colores , $key: colorPrincipal );
+    min-height: 100px;;
+    p{
+    color:map-get($map: $colores , $key: colorCuaternario );
+    text-align:center;
+    }
+}
+
+/*Grilla */
+.grid-container {
+  display: grid;
+  margin: 40px 0 40px 0;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1px 1px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  grid-template-areas: "bannerUno bannerUno bannerUno bannerUno"
+ "noticiaDos noticiaDos noticiaTres noticiaCuatro"
+ "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro"; }
+
+.bannerUno {
+  grid-area: bannerUno;
+  background-color: $colorSecundario; }
+
+.noticiaTres {
+  @extend .bannerUno;
+  grid-area: noticiaTres;
+  }
+
+.noticiaDos {
+  @extend .bannerUno;
+  grid-area: noticiaDos;
+   }
+
+.noticiaCuatro {
+  @extend .bannerUno;
+  grid-area: noticiaCuatro;
+   }
+
+.noticiaCinco {
+  @extend .bannerUno;
+  grid-area: noticiaCinco;
+   }
+
+.noticiaSeis {
+  @extend .bannerUno;
+  grid-area: noticiaSeis;
+   }
+
+.noticiaSiete {
+  @extend .bannerUno;
+  grid-area: noticiaSiete;
+   }
