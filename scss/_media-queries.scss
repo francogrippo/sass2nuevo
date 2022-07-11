@@ -1,5 +1,5 @@
 /* media queries */
-/*
+
 @mixin wm ($ancho, $margen) {
     width:$ancho;
     margin:$margen;            
@@ -46,15 +46,32 @@
         text-align: center;
     }
 }
-*/
+
 
 
 
 /*====XLL DEVICE ====*/
-@media only screen and (min-width: 768px) and(max-width: 900px);
+@media only screen and (min-width: 768px) and(max-width: 900px){
+
+};
+
+
 /*====XL DEVICE ====*/
-@media only screen and (min-width: 600px) and(max-width: 767px);
+@media only screen and (min-width: 600px) and(max-width: 767px){
+
+};
+
+
+
 /*====L DEVICE ====*/
-@media only screen and (min-width: 481px) and(max-width: 599px);
+@media only screen and (min-width: 481px) and(max-width: 599px){
+
+};
+
+
+
+
 /*====SMALL DEVICE ====*/
-@media only screen and (min-width: 320px) and(max-width: 480px);
+@media only screen and (min-width: 320px) and(max-width: 480px){
+    
+};
